@@ -20,5 +20,23 @@ A front-end system will allow the user to make observations to the database.
 
 Using the data in the database, a list can be shown that depicts which boxes to check next.
 
-## Acknowlegdements
+## Documentation
+
+### Frontend
+
+    TODO
+
+### Rest API
+
+Is found [here](./REST_API.md). 
+
+    TODO: replace the REST API documentation with swagger documentation
+
+### Backend
+
+    TODO
+
+## Acknowledgements
+
+
 

@@ -1,11 +1,8 @@
 
-# Documentation
-TODO: replace the REST API documentation with swagger documentation
-
-## REST API
+# REST API
 Prefix methods below with http://server/context
 
-### Nest boxes
+## Nest boxes
 
 GET
 /nestbox: all nestboxes - properties only
@@ -26,7 +23,7 @@ Example output :
         "zone":"48"
     }]
 
-### Nest box features
+## Nest box features
 
 GET
 /nestbox/feature : all nestboxes as GeoJson features with properties 
