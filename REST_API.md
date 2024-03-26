@@ -7,9 +7,11 @@ Prefix methods below with http://server/context
 GET
 /nestbox: all nestboxes - properties only
 
-Params:
+QueryParams (not required):
 
-- boxId: filter the list of nestboxes by property boxId
+- boxId: filter the result by property _boxId_
+- altitude: filter the result by property _altitude_
+- boxId: filter the result by property _boxId_
 
 Return type : Array
 
@@ -28,9 +30,11 @@ Example output :
 GET
 /nestbox/feature : all nestboxes as GeoJson features with properties 
 
-Params :
+Queryparams (not required):
 
-- boxId : filter list by property boxId
+- boxId : filter list by property _boxId_
+- altitude : filter list by property _altitude_
+- zone : filter liste by property _zone_
 
 Return type: Array
 
@@ -55,5 +59,30 @@ Example output:
         "type": "Feature"
       }
     ]
+
+GET
+/nestbox/feature/{fid} : the nestbox with unique id _fid_
+
+Return type: Object {}
+
+Example output:
+
+    {
+      "_id": {
+        "timestamp": 1711485932,
+        "date": "2024-03-26T20:45:32.000+00:00"
+    },
+      "properties": {
+        "fid": 108,
+        "altitude": 1,
+        "boxId": "301",
+        "zone": "13"
+    },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.5416995606844, 55.8830301305001]
+    },
+      "type": "Feature"
+    }
 
 
