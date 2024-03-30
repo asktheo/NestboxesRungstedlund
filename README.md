@@ -24,19 +24,36 @@ Using the data in the database, a list can be shown that depicts which boxes to 
 
 ### Frontend
 
-    TODO
+Test-server: test.birdware.dk
 
 ### Rest API
 
-Is found [here](./REST_API.md). 
+First version found [here](./REST_API.md). 
 
-    TODO: replace the REST API documentation with swagger documentation
+Latest Test version is found [here](http://95.217.6.20/rungstedlund/swagger-ui)
 
 ### Backend
 
-    TODO
+#### Server 
+
+Test-server: 95.217.6.20
+Owner: asktheo
+TLS: *TODO*
+
+#### Softwarestack
+
+    Rest documentation                : Swagger-UI
+    Web server                        : nginx with two way proxy for url
+    Application server                : Embedded Tomcat with a single war-file on port : ****
+    Settings for Spring application   : application.properties
+    Rest controller and application   : Java (17) Spring
+    Database                          : Database ******** in Mongo DB instance on port : *****
+    Data collections                  : nestbox, status, record
+    Mongo DB repository controller    : Java (17) Spring
 
 ## Acknowledgements
 
+Backend built with XCode, Java 17, Mongo DB v. 4.4.25, IntelliJ IDEA CE by [asktheo](https://github.com/asktheo)
+    
 
 
